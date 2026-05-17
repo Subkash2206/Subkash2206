@@ -1,9 +1,6 @@
 # Subhash Kashyap
 
-**CS Undergraduate · NIT Rourkela `2024–2028`**  
-Research Intern · ISI Bangalore, SSIU Lab · Dr. Saroj K. Meher
-
-<img src="banner.svg" width="100%" alt="Animated signal aliasing diagram"/>
+<img src="terminal.svg" width="100%" alt="Terminal bio animation"/>
 
 ---
 
