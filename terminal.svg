@@ -1,0 +1,78 @@
+<svg width="100%" viewBox="0 0 680 200" role="img" xmlns="http://www.w3.org/2000/svg">
+  <title>Animated typing bio</title>
+  <desc>Terminal-style typing animation introducing Subhash Kashyap</desc>
+
+  <style>
+    text { font-family: monospace; font-size: 14px; }
+    .bg  { fill: #0d1117; }
+    .dot1 { fill: #ff5f57; }
+    .dot2 { fill: #febc2e; }
+    .dot3 { fill: #28c840; }
+    .prompt { fill: #4e9a4e; }
+    .txt    { fill: #e6edf3; }
+    .dim    { fill: #6e7681; }
+    .cursor { fill: #e6edf3; animation: blink 1s step-end infinite; }
+
+    @keyframes blink { 0%,100%{opacity:1} 50%{opacity:0} }
+
+    .l1 { opacity:0; animation: appear 0s 0.3s forwards; }
+    .l2 { opacity:0; animation: appear 0s 1.4s forwards; }
+    .l3 { opacity:0; animation: appear 0s 2.5s forwards; }
+    .l4 { opacity:0; animation: appear 0s 3.6s forwards; }
+    .l5 { opacity:0; animation: appear 0s 4.7s forwards; }
+
+    .t1 { clip-path: inset(0 100% 0 0); animation: type 0.9s steps(20,end) 0.3s forwards; }
+    .t2 { clip-path: inset(0 100% 0 0); animation: type 0.9s steps(24,end) 1.4s forwards; }
+    .t3 { clip-path: inset(0 100% 0 0); animation: type 0.9s steps(28,end) 2.5s forwards; }
+    .t4 { clip-path: inset(0 100% 0 0); animation: type 0.9s steps(22,end) 3.6s forwards; }
+    .t5 { clip-path: inset(0 100% 0 0); animation: type 0.9s steps(30,end) 4.7s forwards; }
+
+    .cur1 { opacity:0; animation: showcur 0.9s 0.3s forwards; }
+    .cur2 { opacity:0; animation: showcur 0.9s 1.4s forwards; }
+    .cur3 { opacity:0; animation: showcur 0.9s 2.5s forwards; }
+    .cur4 { opacity:0; animation: showcur 0.9s 3.6s forwards; }
+    .cur5 { opacity:0; animation: showcur 0s  5.6s forwards; }
+
+    @keyframes appear { to { opacity:1; } }
+    @keyframes type   { to { clip-path: inset(0 0% 0 0); } }
+    @keyframes showcur {
+      0%   { opacity: 1; }
+      99%  { opacity: 1; }
+      100% { opacity: 0; }
+    }
+  </style>
+
+  <rect width="680" height="200" rx="8" class="bg"/>
+  <circle cx="28" cy="24" r="6" class="dot1"/>
+  <circle cx="48" cy="24" r="6" class="dot2"/>
+  <circle cx="68" cy="24" r="6" class="dot3"/>
+  <text x="320" y="29" class="dim" text-anchor="middle" font-size="12">subhash — bash</text>
+  <line x1="0" y1="42" x2="680" y2="42" stroke="#21262d" stroke-width="1"/>
+
+  <g class="l1">
+    <text x="24" y="74" class="prompt">~</text>
+    <text x="38" y="74" class="dim"> ❯ </text>
+    <text x="68" y="74" class="txt t1">whoami</text>
+    <rect class="cur1 cursor" x="130" y="60" width="8" height="16"/>
+  </g>
+
+  <g class="l2">
+    <text x="24" y="100" class="dim t2">subhash kashyap · cs undergrad · nit rourkela</text>
+  </g>
+
+  <g class="l3">
+    <text x="24" y="126" class="prompt">~</text>
+    <text x="38" y="126" class="dim"> ❯ </text>
+    <text x="68" y="126" class="txt t3">cat research.txt</text>
+    <rect class="cur3 cursor" x="196" y="112" width="8" height="16"/>
+  </g>
+
+  <g class="l4">
+    <text x="24" y="152" class="dim t4">spectral behavior in neural networks.</text>
+  </g>
+
+  <g class="l5">
+    <text x="24" y="178" class="dim t5">isi bangalore · midl 2026 · more in progress.</text>
+    <rect class="cur5 cursor" x="24" y="164" width="8" height="16"/>
+  </g>
+</svg>
